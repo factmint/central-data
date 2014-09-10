@@ -1,6 +1,6 @@
 define(['snap', 'number-utils'],
 function(Snap, NumberUtils) {
-	Snap.plugin(function(Snap, Element, Paper) {
+	return Snap.plugin(function(Snap, Element, Paper) {
 
 		var FONT_FAMILY = "'Lato', sans-serif";
 
