@@ -1,8 +1,6 @@
-define(['snap', 'number-utils'],
-function(Snap, NumberUtils) {
+define(['snap', 'config', 'number-utils'],
+function(Snap,   Config,   NumberUtils) {
 	return Snap.plugin(function(Snap, Element, Paper) {
-
-		var FONT_FAMILY = "'Lato', sans-serif";
 
 		Paper.prototype.centralData = function(x, y, maxWidth, titleText, valueText, totalText, colorClass, prefix, suffix) {
 
@@ -15,7 +13,7 @@ function(Snap, NumberUtils) {
 
 			var title = this.text(x, y, mainText)
 				.attr({
-					'font-family': FONT_FAMILY,
+					'font-family': Config.FONT_FAMILY,
 					'font-size': 25,
 					'text-anchor': 'middle'
 				})
@@ -26,7 +24,7 @@ function(Snap, NumberUtils) {
 
 			var total = this.text(x, y + titleHeight, totalText)
 				.attr({
-					'font-family': FONT_FAMILY,
+					'font-family': Config.FONT_FAMILY,
 					'font-size': 13,
 					'font-weight': 700,
 					'text-anchor': 'middle'
