@@ -7,7 +7,7 @@
   "description": "A Snap.svg plugin for drawing information inside a doughnut chart",
   "dependencies": {
     "Snap.svg": "*",
-    "number-utils": "https://git.assembla.com/descartes_diaphragm.number-utils.git"
+    "number-utils": "https://github.com/factmint/number-utils.git"
   },
   "main": "dist/central-data.js",
   "moduleType": [
